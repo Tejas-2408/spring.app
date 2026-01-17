@@ -31,5 +31,8 @@ public class SpringApp {
 
         Vehicle v2 = context.getBean("ferrariVehicle",Vehicle.class);
         System.out.println("Vehicle name from Spring Context is: "+ v2.getName());
+
+        Vehicle v3 = context.getBean("teslaVehicle",Vehicle.class);
+        System.out.println("Vehicle name from Spring Context is: "+ v3.getName());
     }
 }
