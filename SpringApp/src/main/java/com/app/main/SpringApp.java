@@ -26,7 +26,10 @@ public class SpringApp {
         Integer num = context.getBean(Integer.class);
         System.out.println("Integer value from Spring Context is: "+ num);
 
-        Vehicle v1 = context.getBean("vehicle2",Vehicle.class);
-        System.out.println("Vehicle name from Spring Context is: "+ v1.getName());
+//        Vehicle v1 = context.getBean("vehicle2",Vehicle.class);
+//        System.out.println("Vehicle name from Spring Context is: "+ v1.getName());
+
+        Vehicle v2 = context.getBean("ferrariVehicle",Vehicle.class);
+        System.out.println("Vehicle name from Spring Context is: "+ v2.getName());
     }
 }
