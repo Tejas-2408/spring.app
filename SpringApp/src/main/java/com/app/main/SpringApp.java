@@ -36,3 +36,4 @@ public class SpringApp {
         System.out.println("Vehicle name from Spring Context is: "+ v3.getName());
     }
 }
+
