@@ -19,9 +19,23 @@ public class ProjectConfig {
      */
 
     @Bean
-    Vehicle vehicle() {
+    Vehicle vehicle1() {
         var v = new Vehicle();
         v.setName("Tesla");
+        return v;
+    }
+
+    @Bean
+    Vehicle vehicle2() {
+        var v = new Vehicle();
+        v.setName("Honda");
+        return v;
+    }
+
+    @Bean
+    Vehicle vehicle3() {
+        var v = new Vehicle();
+        v.setName("Ferari");
         return v;
     }
 
