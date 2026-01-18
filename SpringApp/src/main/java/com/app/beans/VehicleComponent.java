@@ -1,5 +1,6 @@
 package com.app.beans;
 
+import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -16,5 +17,10 @@ public class VehicleComponent {
 
     public void printHello(){
         System.out.println("Hello there from Vehicle Component class");
+    }
+
+    @PostConstruct
+    public void initialise(){
+        this.name = "Honda";
     }
 }
