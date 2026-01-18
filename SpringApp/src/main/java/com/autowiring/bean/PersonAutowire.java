@@ -7,8 +7,10 @@ import org.springframework.stereotype.Component;
 public class PersonAutowire {
     private String name;
 
-    @Autowired
+    @Autowired(required = false)
     private Vehicle vehicle;
+
+    private Vehicle vehicle2;
 
     public PersonAutowire() {
         System.out.println("Person bean has been created");
@@ -28,5 +30,10 @@ public class PersonAutowire {
 
     public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
+    }
+
+    @Autowired
+    public PersonAutowire(Vehicle vehicle2) {
+        this.vehicle2 = vehicle2;
     }
 }
