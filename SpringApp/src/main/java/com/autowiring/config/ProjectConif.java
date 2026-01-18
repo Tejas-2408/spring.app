@@ -22,4 +22,12 @@ public class ProjectConif {
         p.setVehicle(vehicle());
         return p;
     }
+
+    @Bean("methodParameter")
+    Person person2(Vehicle v){
+        Person p = new Person();
+        p.setName("Method Bansal");
+        p.setVehicle(v);
+        return p;
+    }
 }
