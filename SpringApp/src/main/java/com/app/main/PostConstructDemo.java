@@ -12,5 +12,6 @@ public class PostConstructDemo {
         VehicleComponent v = context.getBean(VehicleComponent.class);
         System.out.println("Component Vehicle name from Spring context is: " + v.getName());
         v.printHello();
+        context.close();
     }
 }
