@@ -1,6 +1,6 @@
 package com.autowiring.config;
 
-import com.autowiring.bean.Vehicle2;
+import com.autowiring.bean.VehicleMul;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Primary;
@@ -10,15 +10,15 @@ public class ConfigMultVehicle {
 
     @Bean
     @Primary
-    Vehicle2 vehicle1(){
-        Vehicle2 v = new Vehicle2();
+    VehicleMul vehicle1(){
+        VehicleMul v = new VehicleMul();
         v.setName("Audi");
         return v;
     }
 
     @Bean
-    Vehicle2 vehicle3(){
-        Vehicle2 v = new Vehicle2();
+    VehicleMul vehicle3(){
+        VehicleMul v = new VehicleMul();
         v.setName("Honda");
         return v;
     }

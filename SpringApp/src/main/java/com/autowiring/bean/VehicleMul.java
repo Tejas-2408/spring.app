@@ -1,9 +1,9 @@
 package com.autowiring.bean;
 
-public class Vehicle2 {
+public class VehicleMul {
     private String name;
 
-    public Vehicle2() {
+    public VehicleMul() {
         System.out.println("Vehicle Bean is created by Spring");
     }
 
